@@ -2,12 +2,6 @@ def point_string(x, y):
     ''' Return a string referencing a point at (x, y) '''
     return "Point is at ("+str(x)+", "+str(y)+")"
 
-    p1_string = point_string(10, 20)
-    p2_string = point_string(5000, -90)
-    print(p1_string)
-    print(p2_string)
-    print(point_string(0, 10))
-
 def full_name(first_name, last_name):
     ''' Return a string consisting of the first name, a space and the last name '''
     return first_name + ' ' + last_name
