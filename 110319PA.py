@@ -256,3 +256,19 @@ class Whatsit:
             self.sounds.remove(string)
         else:
             print("Error: " + self.name + " can't " + string)
+
+def plot_bar_chart(counts):
+    temp = []
+    for keys, values in counts.items():
+        temp.append(values)
+    maximum = max(temp)
+    letter = ' '
+    for i in range(1, maximum + 1):
+        expression = ''
+        for j in range(0, len(temp)):
+            if temp[j] + i - maximum <= 0:
+                letter = ' '
+            else:
+                letter = '*'
+            expression += letter
+        print(expression)
